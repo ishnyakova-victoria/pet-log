@@ -1,0 +1,14 @@
+.note {
+    color: var(--grey);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    p {
+        margin: 10px;
+    }
+    ion-button {
+        --color-activated: var(--ion-color-blue);
+        --color-focused: var(--ion-color-blue);
+        --color-hover: var(--ion-color-blue);
+    }
+}
