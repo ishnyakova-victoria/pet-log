@@ -1,0 +1,16 @@
+ion-toolbar {
+    --min-height: 80px;
+}
+ion-button {
+    --color-activated: var(--ion-color-pink);
+    --color-focused: var(--ion-color-pink);
+    --color-hover: var(--ion-color-pink);
+}
+.logo {
+    height: 70px;
+    width: 70px;
+    ion-img {
+        min-height: 70px;
+        min-width: 70px;
+    }
+}
