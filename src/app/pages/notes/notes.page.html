@@ -1,0 +1,15 @@
+<app-header [title]="'Заметки'"></app-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <app-reorder-list [color]="'blue'">
+          <ng-template #reorderItem>
+            <app-note></app-note>
+          </ng-template>
+        </app-reorder-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
