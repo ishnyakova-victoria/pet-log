@@ -1,0 +1,31 @@
+.widget {
+    border: 1px solid var(--light-grey);
+    border-radius: 7px;
+    .widget-header {
+        padding: 10px 20px;
+        border-bottom: 1px solid var(--light-grey);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 7px 7px 0 0;
+    }
+    .widget-content {
+        width: 100%;
+        padding: 10px;
+    }
+}
+.widget.pink {
+    .widget-header {
+        background-color: rgba(var(--ion-color-pink-rgb), .7);
+    }
+}
+.widget.blue {
+    .widget-header {
+        background-color: rgba(var(--ion-color-blue-rgb), .7);
+    }
+}
+.widget.yellow {
+    .widget-header {
+        background-color: rgba(var(--ion-color-yellow-rgb), .7);
+    }
+}

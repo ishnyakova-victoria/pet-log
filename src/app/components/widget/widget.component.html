@@ -1,0 +1,14 @@
+<div class="widget" [class]="color">
+  <div class="widget-header">
+    <h2>{{ title }}</h2>
+    <ion-buttons>
+      <ion-button shape="round" fill="clear" (click)="onCreate()">
+        <ion-icon name="add"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </div>
+
+  <div class="widget-content">
+    <ng-content></ng-content>
+  </div>
+</div>
