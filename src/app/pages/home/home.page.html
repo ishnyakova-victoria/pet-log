@@ -1,0 +1,30 @@
+<app-header [title]="'Главная'"></app-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <app-widget [title]="'События'" [color]="'pink'" (create)="create($event, 'event')">
+          <app-calendar></app-calendar>
+          <app-reorder-list [color]="'pink'">
+            <ng-template #reorderItem>
+              <app-event></app-event>
+            </ng-template>
+          </app-reorder-list>
+        </app-widget>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <app-widget [title]="'Заметки'" [color]="'blue'" (create)="create($event, 'note')">
+          <app-reorder-list [color]="'blue'">
+            <ng-template #reorderItem>
+              <app-note></app-note>
+            </ng-template>
+          </app-reorder-list>
+        </app-widget>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
