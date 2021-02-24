@@ -1,0 +1,18 @@
+.event {
+    color: var(--grey);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .event-content {
+        margin: 10px;
+    }
+    time {
+        margin-bottom: 5px;
+        display: block;
+    }
+    ion-button {
+        --color-activated: var(--ion-color-pink);
+        --color-focused: var(--ion-color-pink);
+        --color-hover: var(--ion-color-pink);
+    }
+}
