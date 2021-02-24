@@ -1,0 +1,30 @@
+<div class="reorder-list" [class]="color">
+  <ion-reorder-group (ionItemReorder)="doReorder($event)" disabled="false">
+    <ion-item>
+      <ion-reorder slot="start">
+        <ion-icon name="paw"></ion-icon>
+      </ion-reorder>
+      <div class="reorder-item">
+        <ng-content *ngTemplateOutlet="reorderItem"></ng-content>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <ion-reorder slot="start">
+        <ion-icon name="paw"></ion-icon>
+      </ion-reorder>
+      <div class="reorder-item">
+        <ng-content *ngTemplateOutlet="reorderItem"></ng-content>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <ion-reorder slot="start">
+        <ion-icon name="paw"></ion-icon>
+      </ion-reorder>
+      <div class="reorder-item">
+        <ng-content *ngTemplateOutlet="reorderItem"></ng-content>
+      </div>
+    </ion-item>
+  </ion-reorder-group>
+</div>

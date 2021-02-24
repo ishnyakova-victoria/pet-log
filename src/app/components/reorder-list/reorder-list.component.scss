@@ -1,0 +1,20 @@
+.reorder-list {
+    .reorder-item {
+        width: 100%;
+    }
+}
+.reorder-list.pink {
+    ion-icon {
+        color: var(--ion-color-pink);
+    }
+}
+.reorder-list.blue {
+    ion-icon {
+        color: var(--ion-color-blue);
+    }
+}
+.reorder-list.yellow {
+    ion-icon {
+        color: var(--ion-color-yellow);
+    }
+}
