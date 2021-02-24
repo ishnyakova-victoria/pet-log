@@ -1,0 +1,43 @@
+.calendar {
+    table {
+        color: var(--grey);
+        text-align: center;
+        width: 100%;
+    }
+    th,
+    td {
+        border: 1px solid var(--light-grey);
+        padding: 10px;
+    }
+    th {
+        color: var(--ion-color-pink);
+        border: 1px solid var(--ion-color-pink);
+    }
+    .events {
+        position: relative;
+    }
+    .events::after {
+        content: '';
+        width: 5px;
+        height: 5px;
+        background-color: var(--ion-color-pink);
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+    .active {
+        color: var(--ion-color-pink);
+        font-weight: bold;
+    }
+    .selected {
+        padding: 5px 10px;
+        background-color: rgba(var(--ion-color-pink-rgb), .5);
+        border: 1px solid var(--ion-color-pink);
+        border-radius: 50%;
+    }
+    .disabled {
+        color: var(--light-grey);
+    }
+}
